@@ -1,0 +1,31 @@
+{
+  "schema": "http://json.schemastore.org/package",
+  "name": "@yunrap-npm/password-generator",
+  "version": "0.1.0",
+  "description": "This CLI is a simple and efficient tool for generating secure random passwords of user-specified length.",
+  "type": "module",
+  "keywords": [
+    "password",
+    "generator",
+    "cli",
+    "security"
+  ],
+  "homepage": "https://github.com/yunrap/password-generator#readme",
+  "bugs": {
+    "url": "https://github.com/yunrap/password-generator/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yunrap/password-generator.git"
+  },
+  "license": "MIT",
+  "author": {
+    "email": "dbsdpwl7@gmail.com",
+    "name": "yunrap"
+  },
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {},
+  "packageManager": "pnpm@9.13.2"
+}
