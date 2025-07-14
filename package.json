@@ -30,14 +30,17 @@
         "name": "yunrap"
     },
     "scripts": {
+        "postbuild": "chmod +x dist/index.js",
+        "build": "vite build --config vite.config.ts",
+        "release": "changeset publish",
+        "changeset-version": "changeset version && pnpm run md:fix",
         "lint": "eslint '**/*.{js,ts,jsx,tsx}'",
         "lint:fix": "eslint '**/*.{js,ts,jsx,tsx}' --fix",
         "prettier": "prettier --check '**/*.{js,ts,jsx,tsx,json,yml,yaml}'",
         "prettier:fix": "prettier --write '**/*.{js,ts,jsx,tsx,json,yml,yaml}'",
         "md": "markdownlint '*.md'",
         "md:fix": "markdownlint --fix '*.md'",
-        "build": "vite build --config vite.config.ts",
-        "postbuild": "chmod +x dist/index.js"
+        "test": "vitest run"
     },
     "devDependencies": {
         "@changesets/cli": "^2.29.5",
