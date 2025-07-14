@@ -1,6 +1,12 @@
 {
     "schema": "http://json.schemastore.org/package",
     "name": "@yunrap-npm/password-generator",
+    "main": "./dist/index.js",
+    "types": "module",
+    "bin": "./dist/index.js",
+    "files": [
+        "dist"
+    ],
     "version": "0.1.0",
     "description": "This CLI is a simple and efficient tool for generating secure random passwords of user-specified length.",
     "type": "module",
@@ -29,15 +35,29 @@
         "prettier": "prettier --check '**/*.{js,ts,jsx,tsx,json,yml,yaml}'",
         "prettier:fix": "prettier --write '**/*.{js,ts,jsx,tsx,json,yml,yaml}'",
         "md": "markdownlint '*.md'",
-        "md:fix": "markdownlint --fix '*.md'"
+        "md:fix": "markdownlint --fix '*.md'",
+        "build": "vite build --config vite.config.ts",
+        "postbuild": "chmod +x dist/index.js"
     },
     "devDependencies": {
+        "@changesets/cli": "^2.29.5",
         "@naverpay/editorconfig": "^0.0.4",
         "@naverpay/eslint-config": "^2.3.0",
         "@naverpay/markdown-lint": "^0.0.3",
         "@naverpay/prettier-config": "^1.0.1",
+        "@rollup/plugin-babel": "^6.0.4",
+        "@types/node": "^24.0.13",
+        "browserslist-to-esbuild": "^2.1.1",
         "lefthook": "^1.12.2",
-        "typescript": "^5.8.3"
+        "typescript": "^5.8.3",
+        "vite": "^7.0.4",
+        "vitest": "^3.2.4"
     },
-    "packageManager": "pnpm@9.13.2"
+    "packageManager": "pnpm@9.13.2",
+    "dependencies": {
+        "@babel/preset-env": "^7.28.0",
+        "chalk": "^5.4.1",
+        "core-js": "^3.44.0",
+        "meow": "^13.2.0"
+    }
 }
