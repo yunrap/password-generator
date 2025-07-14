@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@babel/preset-env':
-        specifier: ^7.28.0
-        version: 7.28.0(@babel/core@7.28.0)
       chalk:
         specifier: ^5.4.1
         version: 5.4.1
@@ -21,6 +18,9 @@ importers:
         specifier: ^13.2.0
         version: 13.2.0
     devDependencies:
+      '@babel/preset-env':
+        specifier: ^7.28.0
+        version: 7.28.0(@babel/core@7.28.0)
       '@changesets/cli':
         specifier: ^2.29.5
         version: 2.29.5
