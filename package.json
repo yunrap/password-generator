@@ -62,5 +62,8 @@
         "chalk": "^5.4.1",
         "core-js": "^3.44.0",
         "meow": "^13.2.0"
+    },
+    "publishConfig": {
+        "access": "public"
     }
 }
